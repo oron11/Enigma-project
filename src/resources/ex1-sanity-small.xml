@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Enigma xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Enigma.xsd">
+	<Machine rotors-count="2">
+		<ABC>
+			ABCDEF
+		</ABC>
+		<Rotors>
+			<Rotor id="1" notch="4">
+				<Mapping from="A" to="F"/>
+				<Mapping from="B" to="E"/>
+				<Mapping from="C" to="D"/>
+				<Mapping from="D" to="C"/>
+				<Mapping from="E" to="B"/>				
+				<Mapping from="F" to="A"/>				
+			</Rotor>
+			<Rotor id="3" notch="6">
+				<Mapping from="A" to="B"/>
+				<Mapping from="B" to="A"/>
+				<Mapping from="C" to="D"/>
+				<Mapping from="D" to="C"/>
+				<Mapping from="E" to="F"/>				
+				<Mapping from="F" to="E"/>				
+			</Rotor>						
+			<Rotor id="2" notch="1">
+				<Mapping from="A" to="E"/>
+				<Mapping from="B" to="B"/>
+				<Mapping from="C" to="D"/>
+				<Mapping from="D" to="F"/>
+				<Mapping from="E" to="C"/>				
+				<Mapping from="F" to="A"/>				
+			</Rotor>						
+		</Rotors>
+		<Reflectors>
+			<Reflector id="I">
+				<Reflect input="1" output="4"/>
+				<Reflect input="2" output="5"/>
+				<Reflect input="3" output="6"/>								
+			</Reflector>
+			<Reflector id="II">
+				<Reflect input="1" output="2"/>
+				<Reflect input="3" output="4"/>
+				<Reflect input="5" output="6"/>
+			</Reflector>			
+		</Reflectors>
+	</Machine>
+	<Decipher agents="5">
+		<Dictionary exclude-chars="!@'#">
+		<Words>		
+			I aa am not a robot hello waffele fly morning noon tonight midnight umbrella watch which ranch why where what whom how if then than not else and not or do does he she it they their boat allies rabbit fox camel dolphine dog cat mouce airplane gun pistol fire water dirt sand hash bomb atom screen voice now later future past present progress quality class squad moon patrol trike street fight battle for dune sea see saw tree fruit vegtable napkin blue yellow green orange pink sky magenta whale red black white word letter code sign system electricity rotor reflector wheel machine enigma terms use of democracy privacy encapsulation file folder text character element component iteration strike kombat mortal doom inferno data item single plural light notch keyboard german poland england thrown game kill death live live house window door desk table trash hair ear hand foot leg eye back front under top on off telephone advance increase decrease print lame shame walk run seat lie lier scam pyramid rectangle triangle function calculator will won't does remote local direct implicit explicit bypass heart blood scratch cannon sheep pedal time sunday monday tuesday wendsday thursday friday saturday big small sanity grid master slave free freedom rule ruler manager employee person human domination control paper clip tray wire computer hard easy strong weak slim tiny huge big small smoke snake snale dwarf dark week month year minute hour second mine yours shape round line square check mark entity entry gate portal edit project design convert view soap window help missing in out action taken army win loose lost make ignore shake shuffle iteration partial complete sink tap deep drop tea coffe sugar spoon knife fork stick mother father brother sister child adult man woman salary account insurance sure suprise attack retreat missile racket wing propellor purple foam great bomer sad happy said feel young old age money gold iron coal steam smoke metal wood nail tape box stand can could bye start end finish
+		</Words>
+		</Dictionary>
+	</Decipher>
+	<Battlefield battle-name="pearl harbour" allies="2" level="Easy" rounds="3"/>
+</Enigma>
